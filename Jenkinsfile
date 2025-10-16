@@ -13,7 +13,7 @@ bat 'venv\\Scripts\\activate && pip install -r requirements.txt'
 stage('Ejecutar script') {
 steps {
 echo "Ejecutando script principal..."
-bat 'venv\\Scripts\\activate && python E:\\CURSO\\CERTUS\\DATAOPS\\CLASE-2'
+bat 'venv\\Scripts\\activate && python E:\\CURSO\\CERTUS\\DATAOPS\\CLASE-2\\JENKINS.PY'
 }
 }
 }
@@ -23,5 +23,6 @@ success { echo "✅ Pipeline completado con éxito" }
 failure { echo "❌ Error en alguna etapa del pipeline" }
 }
 }
+
 
 
