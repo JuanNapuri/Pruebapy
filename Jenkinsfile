@@ -5,7 +5,7 @@ stages {
 stage('Preparar entorno') {
 steps {
 echo "Creando entorno virtual..."
-bat '"C:\Users\Juanpa\AppData\Local\Programs\Python\Python312\python.exe" -m venv venv'
+bat '"C:\\Users\\Juanpa\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m venv venv'
 bat 'venv\\Scripts\\activate && pip install -r requirements.txt'
 }
 }
@@ -23,3 +23,4 @@ success { echo "✅ Pipeline completado con éxito" }
 failure { echo "❌ Error en alguna etapa del pipeline" }
 }
 }
+
