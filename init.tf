@@ -19,5 +19,5 @@ variable "nombre_servidor" {
 # Este recurso crea un archivo local que representa la 'infraestructura'
 resource "local_file" "infra" {
   filename = "${var.nombre_servidor}.txt"
-  content = "Infraestructura simulada creada exitosamente, Timestamp: ${timestamp()}"
+  content = "Infraestructura simulada creada exitosamente. Timestamp: ${timestamp()}"
   }
